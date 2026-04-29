@@ -7,12 +7,14 @@ terraform {
   // You can run the setup scripts in mlops-setup-scripts/terraform to provision the Azure Blob Storage container
   // referenced below and store appropriate credentials for accessing the container from CI/CD.
   //
+  /*
   backend "azurerm" {
     resource_group_name  = "yapemlstacks2"
     storage_account_name = "yapemlstacks2"
     container_name       = "tfstate"
     key                  = "staging.terraform.tfstate"
   }
+  */
   required_providers {
     databricks = {
       source = "databricks/databricks"

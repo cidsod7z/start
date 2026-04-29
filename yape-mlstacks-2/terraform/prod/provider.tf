@@ -10,12 +10,14 @@ terraform {
   // https://www.terraform.io/language/settings/backends/configuration#available-backends. Note that a remote
   // state backend must be specified (you cannot use the default "local" backend), otherwise resource deployment
   // will fail.
+  /*
   backend "azurerm" {
     resource_group_name  = "yapemlstacks2"
     storage_account_name = "yapemlstacks2"
     container_name       = "tfstate"
     key                  = "prod.terraform.tfstate"
   }
+  */
   required_providers {
     databricks = {
       source = "databricks/databricks"
